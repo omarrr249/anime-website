@@ -1,64 +1,47 @@
 
 body {
-    font-family: 'Tahoma', sans-serif;
-    background-color: #1b1b1b;
-    color: #f0f0f0;
-    margin: 0;
-    padding: 0;
+  background-color: #1c1c1c;
+  color: #f5f5f5;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
 }
-
 header {
-    background-color: #282c34;
-    padding: 20px;
-    text-align: center;
+  background-color: #222;
+  padding: 20px;
+  text-align: center;
 }
-
-header h1 {
-    margin: 0;
-    font-size: 2.5em;
+nav a {
+  color: #00c3ff;
+  margin: 0 15px;
+  text-decoration: none;
 }
-
-nav ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline-block;
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: #61dafb;
-    text-decoration: none;
-    font-size: 1.2em;
-}
-
 section {
-    padding: 20px;
+  padding: 30px;
 }
-
+.cover {
+  max-width: 300px;
+  display: block;
+  margin: 0 auto 20px;
+  border-radius: 10px;
+}
 .character {
-    display: flex;
-    background-color: #333;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    overflow: hidden;
+  background-color: #333;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
 }
-
 .character img {
-    width: 180px;
-    height: auto;
-    object-fit: cover;
+  width: 100px;
+  margin-left: 20px;
+  border-radius: 8px;
 }
-
-.character div {
-    padding: 15px;
-}
-
 footer {
-    background-color: #111;
-    text-align: center;
-    padding: 10px;
-    font-size: 0.9em;
+  background-color: #111;
+  padding: 15px;
+  text-align: center;
+  font-size: 0.9em;
+  color: #aaa;
 }
