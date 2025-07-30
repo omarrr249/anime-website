@@ -1,44 +1,43 @@
 
 body {
-  background-color: #121212;
-  color: #f0f0f0;
-  font-family: 'Cairo', sans-serif;
-  margin: 0;
-  padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #111;
+    color: #f0f0f0;
 }
 header {
-  background-color: #1f1f1f;
-  padding: 20px;
-  text-align: center;
-  font-size: 2em;
+    background-color: #222;
+    padding: 20px;
+    text-align: center;
 }
-main {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding: 20px;
+nav a {
+    color: #0af;
+    margin: 0 10px;
+    text-decoration: none;
 }
-.anime-card {
-  background: #2b2b2b;
-  margin: 10px;
-  border-radius: 12px;
-  overflow: hidden;
-  width: 200px;
-  text-align: center;
-  transition: transform 0.3s;
+.cover {
+    max-width: 200px;
+    display: block;
+    margin: 10px auto;
 }
-.anime-card:hover {
-  transform: scale(1.05);
+section {
+    padding: 20px;
+    border-bottom: 1px solid #333;
 }
-.anime-card img {
-  width: 100%;
-  height: auto;
+.card-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
 }
-.anime-card p {
-  margin: 10px 0;
-  font-size: 1.2em;
+.card {
+    background-color: #222;
+    border: 1px solid #444;
+    border-radius: 8px;
+    padding: 10px;
+    max-width: 300px;
 }
-a {
-  text-decoration: none;
-  color: inherit;
+.card img {
+    width: 100%;
+    border-radius: 6px;
 }
