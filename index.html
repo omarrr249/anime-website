@@ -1,30 +1,102 @@
-
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="ar" dir="rtl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>موقع أنمي بسيط</title>
-    <link rel="stylesheet" href="assets/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>موقع أنمي بسيط وجميل</title>
+  <style>
+    /* إعدادات عامة */
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      color: #fff;
+      margin: 0;
+      padding: 20px;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    h1 {
+      margin-bottom: 30px;
+      font-weight: 700;
+      text-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    }
+
+    .anime-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+      gap: 20px;
+      width: 100%;
+      max-width: 900px;
+    }
+
+    .anime-item {
+      background: rgba(255,255,255,0.1);
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .anime-item:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+    }
+
+    .anime-item h2 {
+      margin-top: 0;
+      font-weight: 700;
+    }
+
+    .anime-item p {
+      margin: 10px 0 15px;
+      line-height: 1.5;
+    }
+
+    .anime-item a {
+      display: inline-block;
+      background: #ff6f61;
+      color: white;
+      text-decoration: none;
+      padding: 10px 15px;
+      border-radius: 8px;
+      font-weight: 600;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+      transition: background 0.3s ease;
+    }
+
+    .anime-item a:hover {
+      background: #ff3b2f;
+    }
+
+    footer {
+      margin-top: auto;
+      font-size: 14px;
+      opacity: 0.7;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>مرحباً بك في عالم الأنمي</h1>
-    </header>
-    <main>
-        <section class="anime">
-            <h2>أنمي: Attack on Titan</h2>
-            <p>قصة مثيرة حول البشر والعمالقة.</p>
-            <a href="https://www.youtube.com/watch?v=MGRm4IzK1SQ" target="_blank">مشاهدة الإعلان</a>
-        </section>
-        <section class="anime">
-            <h2>أنمي: Demon Slayer</h2>
-            <p>مغامرة ملحمية لصيادي الشياطين.</p>
-            <a href="https://www.youtube.com/watch?v=VQGCKyvzIM4" target="_blank">مشاهدة الإعلان</a>
-        </section>
-    </main>
-    <footer>
-        <p>© 2025 موقع أنمي بسيط</p>
-    </footer>
+  <h1>موقع أنمي بسيط وجميل</h1>
+
+  <div class="anime-list">
+    <div class="anime-item">
+      <h2>ون بيس (One Piece)</h2>
+      <p>قصة مغامرات القراصنة المثيرة.</p>
+      <a href="https://www.youtube.com/watch?v=GpkqU6MVAPc" target="_blank" rel="noopener">مشاهدة الإعلان</a>
+    </div>
+
+    <div class="anime-item">
+      <h2>هجوم العمالقة (Attack on Titan)</h2>
+      <p>معركة للبقاء في عالم مهدد بالعمالقة.</p>
+      <a href="https://www.youtube.com/watch?v=MGRm4IzK1SQ" target="_blank" rel="noopener">مشاهدة الإعلان</a>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 موقع أنمي بسيط - جميع الحقوق محفوظة
+  </footer>
 </body>
 </html>
